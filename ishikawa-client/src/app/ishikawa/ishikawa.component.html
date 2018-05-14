@@ -1,0 +1,32 @@
+<div class="col-md-6">
+<h2>Ishikawa's Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th class="hidden">Id</th>
+    <th>Que</th>
+    <th>Donde</th>
+    <th>Cuando</th>
+    <th>Como</th>
+    <th>Definicion del Problema</th>
+    <th>Fecha de Analisis</th>
+    <th>Nombre ETAD</th>
+    <th></th>
+  </tr>
+</thead>
+  <tbody>
+  <tr *ngFor="let ishikawa of ishikawas">
+    <td class="hidden"></td>
+    <td>{{ ishikawa.que }}</td>
+    <td>{{ ishikawa.donde }}</td>
+    <td>{{ ishikawa.cuando }}</td>
+    <td>{{ ishikawa.como }}</td>
+    <td>{{ ishikawa.definicionDelProblema }}</td>
+    <td>{{ ishikawa.fechaDeAnalisis }}</td>
+    <td>{{ ishikawa.nombreEtad }}</td>
+    <td><button class="btn btn-danger" (click)="deleteIshikawa(ishikawa)">Delete Ishikawa</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>
