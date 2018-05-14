@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { IshikawaComponent } from './ishikawa/ishikawa.component';
+import { AddIshikawaComponent } from './ishikawa/add-ishikawa.component';
 import { AppRoutingModule } from './app.routing.module';
 import { IshikawaService } from './ishikawa/ishikawa.service';
 import { HttpClientModule } from "@angular/common/http";
@@ -11,7 +12,8 @@ import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
-    IshikawaComponent
+    IshikawaComponent,
+    AddIshikawaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Ishikawa</h2>
+  <form>
+    <div class="form-group">
+      <label for="que">Que:</label>
+     <input [(ngModel)]="ishikawa.que" placeholder="Que" name="que" class="form-control" id="que">
+    </div>
+    <div class="form-group">
+      <label for="donde">Donde:</label>
+     <input [(ngModel)]="ishikawa.donde" placeholder="Donde" name="donde" class="form-control" id="donde">
+    </div>
+    <div class="form-group">
+      <label for="cuando">Cuando:</label>
+     <input [(ngModel)]="ishikawa.cuando" placeholder="Cuando" name="cuando" class="form-control" id="cuando">
+    </div>
+    <div class="form-group">
+      <label for="como">Como:</label>
+     <input [(ngModel)]="ishikawa.como" placeholder="Como" name="como" class="form-control" id="como">
+    </div>
+    <div class="form-group">
+      <label for="definicionDelProblema">Definicion del Problema:</label>
+     <input [(ngModel)]="ishikawa.definicionDelProblema" placeholder="Definicion del problema" name="definicionDelProblema" class="form-control" id="definicionDelProblema">
+    </div>
+    <div class="form-group">
+      <label for="fechaDeAnalisis">Fecha de Analisis:</label>
+     <input [(ngModel)]="ishikawa.fechaDeAnalisis" placeholder="Fecha de Analisis" name="fechaDeAnalisis" class="form-control" id="fechaDeAnalisis">
+    </div>
+    <div class="form-group">
+      <label for="nombreEtad">Nombre ETAD:</label>
+     <input [(ngModel)]="ishikawa.nombreEtad" placeholder="Nombre ETAD" name="nombreEtad" class="form-control" id="nombreEtad">
+    </div>
+    <button class="btn btn-success" (click)="createIshikawa()">Crear</button>
+  </form>
+</div>
